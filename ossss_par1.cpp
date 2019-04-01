@@ -2,12 +2,11 @@
 #include<unistd.h>
 #include<pthread.h>
 #include<semaphore.h>
-#include<stdlib.h>
 void *Reader(void *arg);
 void *Writer(void *arg);
 int rc=0;
-sem_t i; // write semaphore
-sem_t j; // mutex semaphore
+sem_t i; 
+sem_t j; 
 
 int main(){
 int a,b,n;
